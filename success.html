@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Success</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+
+<div class="success-box">
+<h1>✔</h1>
+<h2>Payment Successful!</h2>
+<p id="paymentId"></p>
+<a href="index.html" class="btn-primary">Back to Home</a>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById("paymentId").innerText =
+"Payment ID: " + params.get("payment_id");
+</script>
+
+</body>
+</html>
